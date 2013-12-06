@@ -21,7 +21,7 @@ plot_theme = theme(line = element_blank(),
 for (i in 1:length(county_names)) {
     county_name = county_names[i]
     county = subset(counties, subregion == county_name)
-    filename = paste("~/Sites/code/TexasTribune/maps/county-pngs/png/", county_name, ".png", sep="")
+    filename = paste("png/", county_name, ".png", sep="")
     png(filename, bg="transparent", width=640, height=640)
 
     county_plot = tx_plot + geom_polygon(data=county, aes(x=long, y=lat, group=group), fill=I("#fcc10f")) + plot_theme
