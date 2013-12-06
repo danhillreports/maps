@@ -35,3 +35,4 @@ Sources
 **Random Files**
 
 - `cities`: manually geocoded
+- `png/counties/`: ['maps' R package] (http://cran.r-project.org/web/packages/maps/)
